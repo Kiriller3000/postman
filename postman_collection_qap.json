@@ -1,0 +1,3021 @@
+{
+	"info": {
+		"_postman_id": "22ea47a4-0607-4e49-9681-650538458bb5",
+		"name": "Task 7.7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26184056"
+	},
+	"item": [
+		{
+			"name": "Test #1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой",
+							"disabled": true
+						},
+						{
+							"key": "breed__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender__code",
+							"value": "f",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&breed__code=indian&gender__code=f&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "-",
+							"disabled": true
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&breed__code=cockatiel&gender__code=wait_home&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой",
+							"disabled": true
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&breed__code=crocodile&gender__code=m&age=2",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой",
+							"disabled": true
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&breed__code=german_shepherd&gender__code=NotSpecified",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой",
+							"disabled": true
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "NotSpecified"
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&breed__code=pitbull&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой",
+							"disabled": true
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "f",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=Герой&breed__code=indian&gender__code=wait_home&age=2",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #8",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=Герой&breed__code=cockatiel&gender__code=m",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #9",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=Герой&breed__code=crocodile&gender__code=NotSpecified&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "NotSpecified"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=Герой&breed__code=german_shepherd",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "f",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #11",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=Герой&breed__code=pitbull&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "f",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #12",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=Герой&gender__code=f&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull",
+							"disabled": true
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #13",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=кот&breed__code=cockatiel&gender__code=NotSpecified",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "NotSpecified"
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #14",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=кот&breed__code=crocodile&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "f",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #15",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=кот&breed__code=german_shepherd&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "f",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #16",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=кот&breed__code=pitbull&gender__code=f&age=2",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #17",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=кот&gender__code=wait_home",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull",
+							"disabled": true
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #18",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=кот&breed__code=indian&gender__code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #19",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=кошка&breed__code=crocodile&age=2",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "f",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #20",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=кошка&breed__code=german_shepherd&gender__code=f",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #21",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=кошка&breed__code=pitbull&gender__code=wait_home&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #22",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=кошка&gender__code=m",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull",
+							"disabled": true
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #23",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=кошка&breed__code=indian&gender__code=NotSpecified&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "NotSpecified"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #24",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=кошка&breed__code=cockatiel&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "f",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #25",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=минипиг&breed__code=german_shepherd&gender__code=wait_home",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "минипиг"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #26",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=минипиг&breed__code=pitbull&gender__code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "минипиг"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #27",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=минипиг&gender__code=NotSpecified&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "минипиг"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull",
+							"disabled": true
+						},
+						{
+							"key": "gender__code",
+							"value": "NotSpecified"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #28",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=минипиг&breed__code=indian&age=2",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "минипиг"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "f",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #29",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=минипиг&breed__code=cockatiel",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "минипиг"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "f",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #30",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=минипиг&breed__code=crocodile&gender__code=f&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "минипиг"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #31",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=Обезьянка&breed__code=pitbull&gender__code=NotSpecified&age=2",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "NotSpecified"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #32",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=Обезьянка",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull",
+							"disabled": true
+						},
+						{
+							"key": "gender__code",
+							"value": "NotSpecified",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #33",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=Обезьянка&breed__code=indian&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "m",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #34",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=Обезьянка&breed__code=cockatiel&gender__code=f",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #35",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=Обезьянка&breed__code=crocodile&gender__code=wait_home&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test #36",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,ru;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://158.160.56.133/app/pets",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=KkwlEg9dJLGOnlcGeR6ip6ZwYZYbzRGDtpTKMRt1tlThQt7IFPapTikycIeVaISc; tabstyle=html-tab",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet?page=1&page_size=6&species__name=Обезьянка&breed__code=german_shepherd&gender__code=m&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "158.160.56.133"
+		}
+	]
+}
